@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Template 3</title>
+</head>
+<body class="bod">
+<div class="main">
+    <div class="one">
+        <pre>
+        <h1 class="big">Our</h1>
+        <h1 class="big">Speakers</h1>
+    </pre>
+
+    </div>
+    <div class="two"><img src="headshot1.png" style="max-width:100%;height:auto;"></div>
+    <div class="three"><img src="headshot2.png" style="max-width:100%;height:auto;"></div>
+    <div class="four"><img src="headshot3.png" style="max-width:100%;height:auto;"></div>
+
+
+
+
+</div>
+
+
+<style>
+    .bod{
+        background-color: dodgerblue;
+    }
+    
+    .main{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        flex-direction: row;
+        
+    }
+    
+    .one{
+        
+        background-color: dodgerblue;
+        width: 400px;
+        height: 435px;
+        
+    }
+    
+    .big{
+        font-size: 80px;
+        text-align: left;
+        margin-left: 100px;
+        color: aquamarine;
+    }
+    
+    .mini{
+        margin-left: 100px;
+        color: cyan;
+    }
+    
+    .two{
+        
+        display: flex;
+        
+    
+    }
+    
+    .three{
+       
+        
+        display: flex;
+    }
+    
+    .four{
+        
+        
+        display: flex;
+    }
+
+    .lily{
+        font-size: 24px;
+        margin-left: 470px;
+        margin-top: -110px;
+    }
+
+    .vio{
+        font-size: 24px;
+        margin-left: 840px;
+        margin-top: -53px;
+    }
+
+    .reb{
+        font-size: 24px;
+        margin-left: 1225px;
+        margin-top: -53px;
+    }
+
+    .lilyone{
+        font-size: 24px;
+        margin-left: 470px;
+        margin-top: -10px;
+    }
+
+    .viotwo{
+        font-size: 24px;
+        margin-left: 840px;
+        margin-top: -50px;
+    }
+
+    .rebthree{
+        font-size: 24px;
+        margin-left: 1225px;
+        margin-top: -50px;
+    }
+
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+ /* Responsive layout - makes a one column layout instead of a two-column layout */
+ @media (max-width: 800px) {
+  .big {
+    flex-direction: column;
+  }
+}
+
+</style>
+
+
+
+
+</body>
+</html>
